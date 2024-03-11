@@ -55,8 +55,6 @@ const shadows = [
 let eventToken =  canvas.tokens.get(args[1].tokenId);
 // ID of player token
 let controlledToken = canvas.tokens.controlled[0];
-// Form Of The Dread gives 1d10 + warlock level temporary HP.
-let tempHP = new Roll('1d10');
 await tempHP.evaluate();
 if (args[0] == "on") // args is an array, zero element contains "on" or "off" (effect attribute), and [1] contains information about effect token
 {
